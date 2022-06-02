@@ -47,6 +47,18 @@ public class LogicalProgram {
         else
             System.out.println("is not prime number");
     }
+
+    void reverseNumber() {
+        Scanner sc = new Scanner(System.in);
+        int number = sc.nextInt();
+        int reminder, sum = 0;
+        while (number > 0) {
+            reminder = number % 10;
+            sum = sum * 10 + reminder;
+            number = number / 10;
+        }
+        System.out.println("The reverse number if given number is:" + sum);
+    }
 }
 
 
