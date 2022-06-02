@@ -30,6 +30,23 @@ public class LogicalProgram {
             f2 = f3;
         }
     }
+
+    void primeNumber() {
+        int number, count = 0;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        number = sc.nextInt();
+        for (int i = 2; i < number; i++) {
+            if (number % i == 0) {
+                count++;
+                break;
+            }
+        }
+        if (count == 0)
+            System.out.println("is prime number");
+        else
+            System.out.println("is not prime number");
+    }
 }
 
 

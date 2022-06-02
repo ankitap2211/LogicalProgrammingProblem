@@ -24,9 +24,6 @@ public class LogicalMain {
             case 4:
                 logicalprogram.primeNumber();
                 break;
-            case 5:
-                logicalprogram.distance();
-                break;
         }
     }
 
